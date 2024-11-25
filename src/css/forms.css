@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center; 
+    height: auto; 
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+ 
+  .form-container h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .styled-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+
+  .form-group input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+
+  .form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 60px;
+    background-color: #31304D;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  .submit-btn:hover {
+    background-color: #11a591;
+  }
+  
+
+.modern-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: none; /* Премахва дръжките за промяна на размера */
+  background-color: #f9f9f9;
+  transition: all 0.3s ease; /* Гладки преходи */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modern-textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.modern-textarea:focus {
+  border-color: #007bff; /* Син акцент при фокус */
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Светеща рамка */
+  outline: none; /* Премахва стандартния outline */
+}
+
+
+.select-client-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-client-button:hover {
+  background-color: #218838;
+}
+
+.select-client-button:active {
+  background-color: #1e7e34;
+}

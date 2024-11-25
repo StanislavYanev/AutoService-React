@@ -1,0 +1,144 @@
+.work-order-active .details-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 150px;
+    text-align: center;
+}
+
+.work-order-active .details-button:hover {
+    background-color: #155bb5;
+    transform: scale(1.05);
+}
+
+.work-order-active .details-button:active {
+    transform: scale(1);
+    background-color: #104a8b;
+}
+
+/* Ограничаване на стиловете само до work-order-active */
+.work-order-active {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-order-active .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.work-order-active .loading,
+.work-order-active .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #1a73e8;
+    padding: 20px;
+}
+
+.work-order-active .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.work-order-active .card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.work-order-active .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.work-order-active .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.work-order-active .card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555555;
+}
+
+.work-order-active .segments {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.work-order-active .segment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.work-order-active .segment p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.work-order-active .no-segments {
+    font-size: 0.9rem;
+    color: #999999;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.work-order-active .card-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 15px; 
+  }
+  
+
+  .work-order-active .card-text {
+    flex: 1; 
+  }
+  
+
+  .work-order-active .work-order-image {
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%; 
+    border: 3px solid #f4f4f4; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    object-fit: cover; 
+  }
+
+  @media (max-width: 768px) {
+    .work-order-active .card-content {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .work-order-active .work-order-image {
+      margin-top: 15px; 
+    }
+  }
+  
